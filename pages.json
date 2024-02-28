@@ -1,55 +1,148 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "%index.title%"
+				"navigationBarTitleText": "bitmakeitx",
+				"enablePullDownRefresh": true,
+				
+				"navigationBarTextStyle": "#ffffff",
+				// "navigationBarBackgroundColor": "#ff4500",
+				"navigationBarBackgroundColor": "#0b60fa",
+				"backgroundColor": "#F8F8F8",
+				"app-plus":{
+					"titleNView": {
+						"type": "transparent"
+					}
+						
+				}
 			}
-		}, {
-			"path": "pages/component/component",
+		},
+		{
+			"path": "pages/contract/index",
 			"style": {
-				"navigationBarTitleText": "%index.component%",
-				"enablePullDownRefresh": false
+				"navigationBarTitleText": "合约"		,
+				"navigationBarTextStyle": "#ffffff",
+				// "navigationBarBackgroundColor": "#ff4500",
+				"navigationBarBackgroundColor": "#0b60fa",
+				"backgroundColor": "#F8F8F8"
 			}
-		}, {
-			"path": "pages/api/api",
+		},
+		{
+			"path": "pages/publish/pub-select-type",
 			"style": {
-				"navigationBarTitleText": "%index.api%",
-				"enablePullDownRefresh": false
+				"navigationBarTitleText": "钱包"		,
+				"navigationBarTextStyle": "#ffffff",
+				// "navigationBarBackgroundColor": "#ff4500",
+				"navigationBarBackgroundColor": "#0b60fa",
+				"backgroundColor": "#F8F8F8"
 			}
-		}, {
-			"path": "pages/schema/schema",
+		},
+		
+		{
+			"path": "pages/me/me",
 			"style": {
-				"navigationBarTitleText": "%index.schema%",
-				"enablePullDownRefresh": false
+				"navigationBarTitleText": "个人中心",
+				"navigationBarTextStyle": "#ffffff",
+				// "navigationBarBackgroundColor": "#ff4500",
+				"navigationBarBackgroundColor": "#0b60fa",
+				"backgroundColor": "#F8F8F8",
+				"app-plus":{
+					
+				}
+			}
+		},
+		
+		//////////个人中心
+		{
+			"path":"pages/home/home-list",
+			"style":{
+				"enablePullDownRefresh": true
+			}
+		},
+		
+		{
+			"path":"pages/login/login",
+			"style":{
+				// "navigationBarTitleText":"手机号登录"
+			}
+		},
+		{
+			"path":"pages/login/register"
+		},
+		{
+			"path":"pages/me/userinfo",
+			"style":{
+				"navigationBarTitleText":"修改资料"
+			}
+		},
+		{
+			"path":"pages/me/setter",
+			"style":{
+				"navigationBarTitleText":"设置"
+			}
+		},
+		{
+			"path":"components/webview",
+			"style":{
+				"navigationBarTitleText":""
+			}
+		},
+		{
+			"path":"pages/me/about-us",
+			"style":{
+				"navigationBarTitleText":"关于我们"
+			}
+		},
+		{
+			"path":"pages/home/detail",
+			"style":{
+				"navigationBarTitleText":"动态详情"
 			}
 		}
+		
 	],
-	"tabBar": {
+	
+	"tabBar":{
 		"color": "#7A7E83",
-		"selectedColor": "#007AFF",
-		"borderStyle": "black",
-		"backgroundColor": "#F8F8F8",
-		"list": [{
-				"pagePath": "pages/index/index",
-				"text": "%index.home%"
+        "selectedColor": "#444444",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+
+		"list":[
+			{
+				"pagePath":"pages/home/index",
+				"iconPath":"/static/tab/shouye@2x.png",
+				"selectedIconPath":"/static/tab/tab_icon_home_selected@2x.png",
+				"text":"首页"
 			},
 			{
-				"pagePath": "pages/component/component",
-				"text": "%index.component%"
-			}, {
-				"pagePath": "pages/api/api",
-				"text": "%index.api%"
-			}, {
-				"pagePath": "pages/schema/schema",
-				"text": "%index.schema%"
+				"pagePath":"pages/contract/index",
+				"iconPath":"static/tab/fabu-2.png",
+				"selectedIconPath":"static/tab/tab_icon_pub_selected@2x.png",
+				"text":"合约",
+				"selectedColor":"#0b60fa"
+			},
+			{
+				"pagePath":"pages/publish/pub-select-type",
+				"iconPath":"static/tab/fabu-2.png",
+				"selectedIconPath":"static/tab/tab_icon_pub_selected@2x.png",
+				"text":"钱包",
+				"selectedColor":"#0b60fa"
+			},
+			{
+				"pagePath":"pages/me/me",
+				"iconPath":"static/tab/wode@2x.png",
+				"selectedIconPath":"static/tab/tab_icon_me_selected@2x.png",
+				"text":"个人中心"
 			}
 		]
 	},
+	
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTextStyle": "#000000",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText":"",
+		"backgroundColor": "#E5E5E5"
 	}
 }
