@@ -1,17 +1,14 @@
 <template>
-	<view>
+  <view>
 
-detail
-	</view>
+    detail222222
+  </view>
 </template>
 
 <script>
-	export default {
-		
-	}
+export default {
+
+}
 </script>
 
-<style>
-
-	
-</style>
+<style></style>
